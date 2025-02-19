@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --amarelo: #F4D04E;
+    --cinza-escuro: #111111;
+    --cinza-claro: #686868;
+    --branco: #FFFFFF;
+    --fonte: "Figtree", serif;
+
+}
+
+body{
+    background-color: var(--amarelo);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+    color: var(--cinza-escuro);
+}
+
+.card{
+    margin-bottom: 24px;
+}
+
+
+.card__container{
+    display: flex;
+    flex-direction: column;
+    width: 327px;
+    height: 450px;
+    background-color: var(--branco);
+    border: 2px solid var(--cinza-escuro);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.76);
+}
+
+.card__container-imagem{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0;
+    gap: 12px;
+}
+
+.card__info-span{
+    background-color: var(--amarelo);
+    align-self: start;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.card__info-data{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card__info-titulo{
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.card__info-titulo:hover{
+    color: var(--amarelo);
+}
+
+.card__info-texto{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza-claro);
+    line-height: 150%;
+}
+
+.card__autor{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.card__autor-img{
+    width: 32px;
+    height: 32px;  
+}
